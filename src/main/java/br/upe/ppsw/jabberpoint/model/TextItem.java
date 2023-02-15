@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import br.upe.ppsw.jabberpoint.control.SlideItem;
+
 public class TextItem extends SlideItem {
 
   private String text;

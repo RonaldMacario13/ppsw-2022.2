@@ -9,9 +9,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 
 import br.upe.ppsw.jabberpoint.model.Accessor;
 import br.upe.ppsw.jabberpoint.model.Presentation;
-import br.upe.ppsw.jabberpoint.model.SlideViewerFrame;
 import br.upe.ppsw.jabberpoint.model.Style;
 import br.upe.ppsw.jabberpoint.model.XMLAccessor;
+import br.upe.ppsw.jabberpoint.view.SlideViewerFrame;
 
 @SpringBootApplication
 public class JabberPointApplication implements CommandLineRunner {

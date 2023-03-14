@@ -8,8 +8,6 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import org.springframework.util.ResourceUtils;
 
-import br.upe.ppsw.jabberpoint.model.Style;
-
 public class BitmapItem extends SlideItem {
 
   private BufferedImage bufferedImage;

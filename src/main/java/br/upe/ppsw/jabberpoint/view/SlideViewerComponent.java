@@ -9,7 +9,6 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import br.upe.ppsw.jabberpoint.model.Presentation;
-import br.upe.ppsw.jabberpoint.model.Slide;
 
 public class SlideViewerComponent extends JComponent {
   private static final long serialVersionUID = 227L;

@@ -5,7 +5,8 @@ import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
 import java.util.Vector;
 
-import br.upe.ppsw.jabberpoint.control.SlideItem;
+import br.upe.ppsw.jabberpoint.view.SlideItem;
+import br.upe.ppsw.jabberpoint.view.TextItem;
 
 public class Slide {
 

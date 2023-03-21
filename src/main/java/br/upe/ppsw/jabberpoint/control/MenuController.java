@@ -15,6 +15,8 @@ import br.upe.ppsw.jabberpoint.model.Accessor;
 import br.upe.ppsw.jabberpoint.model.Presentation;
 import br.upe.ppsw.jabberpoint.view.AboutBox;
 
+// É o que faz as coisinhas na aplicação.
+
 public class MenuController extends MenuBar {
 
   private static final long serialVersionUID = 227L;

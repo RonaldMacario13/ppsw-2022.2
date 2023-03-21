@@ -10,8 +10,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import br.upe.ppsw.jabberpoint.control.XMLAccessor;
 import br.upe.ppsw.jabberpoint.model.Accessor;
 import br.upe.ppsw.jabberpoint.model.Presentation;
+import br.upe.ppsw.jabberpoint.model.Style;
 import br.upe.ppsw.jabberpoint.view.SlideViewerFrame;
-import br.upe.ppsw.jabberpoint.view.Style;
 
 @SpringBootApplication
 public class JabberPointApplication implements CommandLineRunner {
@@ -35,11 +35,13 @@ public class JabberPointApplication implements CommandLineRunner {
 
     new SlideViewerFrame(JABVERSION, presentation);
 
+    // Se a aplicação abrir sem nada, ela roda o demo, caso contrário
+    
     try {
-      if (args.length == 0) {
+      if (args.length <= 1) {
         Accessor.getDemoAccessor().loadFile(presentation, "");
       } else {
-        new XMLAccessor().loadFile(presentation, args[0]);
+        new XMLAccessor().loadFile(presentation, args[1]);
       }
 
       presentation.setSlideNumber(0);

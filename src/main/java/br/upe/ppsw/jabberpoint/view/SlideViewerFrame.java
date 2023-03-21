@@ -9,6 +9,8 @@ import br.upe.ppsw.jabberpoint.control.KeyController;
 import br.upe.ppsw.jabberpoint.control.MenuController;
 import br.upe.ppsw.jabberpoint.model.Presentation;
 
+//Classe que desenha o slide na tela
+
 public class SlideViewerFrame extends JFrame {
 
   private static final long serialVersionUID = 3227L;

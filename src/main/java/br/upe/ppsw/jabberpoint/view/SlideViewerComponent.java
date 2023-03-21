@@ -9,6 +9,10 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import br.upe.ppsw.jabberpoint.model.Presentation;
+import br.upe.ppsw.jabberpoint.model.Slide;
+
+// Classe que desenha o slide na tela
+// Talvez seja controller?
 
 public class SlideViewerComponent extends JComponent {
   private static final long serialVersionUID = 227L;

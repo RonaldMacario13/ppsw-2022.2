@@ -5,6 +5,9 @@ import java.awt.event.KeyEvent;
 
 import br.upe.ppsw.jabberpoint.model.Presentation;
 
+// Talvez mandar para o view?
+// Ela pega as entradas do usuário no teclado.
+
 public class KeyController extends KeyAdapter {
 
   private Presentation presentation;

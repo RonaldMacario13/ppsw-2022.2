@@ -3,6 +3,9 @@ package br.upe.ppsw.jabberpoint.view;
 import java.awt.Frame;
 import javax.swing.JOptionPane;
 
+// É o "sobre" do programa, na aplicação.
+// Clica em show com o direito e vai em references project.
+
 public class AboutBox {
 
   public static void show(Frame parent) {

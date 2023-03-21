@@ -1,7 +1,10 @@
-package br.upe.ppsw.jabberpoint.view;
+package br.upe.ppsw.jabberpoint.model;
 
 import java.awt.Color;
 import java.awt.Font;
+
+// É o que estiliza os slides. Aplicar os estilos. (Textos, cor de fundo do slide)
+
 
 public class Style {
 

@@ -1,8 +1,12 @@
-package br.upe.ppsw.jabberpoint.view;
+package br.upe.ppsw.jabberpoint.model;
 
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
+
+// Serve para implementar os itens do slide.
+// level = onde ele fica na tela
+// Ele é uma parte maior de textItem e Bitmapitem
 
 public abstract class SlideItem {
 

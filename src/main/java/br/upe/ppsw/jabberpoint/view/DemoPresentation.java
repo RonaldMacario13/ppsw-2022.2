@@ -4,7 +4,11 @@ import java.io.FileNotFoundException;
 import org.springframework.util.ResourceUtils;
 
 import br.upe.ppsw.jabberpoint.model.Accessor;
+import br.upe.ppsw.jabberpoint.model.BitmapItem;
 import br.upe.ppsw.jabberpoint.model.Presentation;
+import br.upe.ppsw.jabberpoint.model.Slide;
+
+// Essa tá bem estranha, talvez mudar nomes
 
 public class DemoPresentation extends Accessor {
 

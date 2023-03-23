@@ -21,7 +21,7 @@ public class KeyController extends KeyAdapter {
       case KeyEvent.VK_PAGE_DOWN:
       case KeyEvent.VK_DOWN:
       case KeyEvent.VK_ENTER:
-      case '+':
+      case '=':
         presentation.nextSlide();
         break;
       case KeyEvent.VK_PAGE_UP:

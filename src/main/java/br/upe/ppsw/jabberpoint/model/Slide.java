@@ -12,62 +12,71 @@ public class Slide {
 
   protected TextItem title;
   protected Vector<SlideItem> items;
-
+  
   public Slide() {
     items = new Vector<SlideItem>();
   }
 
-  public void append(SlideItem anItem) {
-    items.addElement(anItem);
+  // CORRETO - Puxando o título do Slide.
+  public TextItem getTitle() {
+    return title;
   }
 
-  public String getTitle() {
-    return title.getText();
-  }
-
+  // CORRETO Setando o título do Slide.
   public void setTitle(String newTitle) {
     title = new TextItem(0, newTitle);
+  }
+  
+  public int getQuantityOfItems() {
+	  return getSize();
+  }
+
+  public void append(SlideItem anItem) {
+	  items.addElement(anItem);
   }
 
   public void append(int level, String message) {
     append(new TextItem(level, message));
   }
 
+  // CORRETO - Pegando o SlideItem, que está dentro do items, usando o index.
   public SlideItem getSlideItem(int number) {
     return (SlideItem) items.elementAt(number);
   }
 
+  //CORRETO - Puxando todos os SlideItems de items.
   public Vector<SlideItem> getSlideItems() {
     return items;
   }
 
+  // CORRETO - Puxando o tamanho do vetor de items.
   public int getSize() {
     return items.size();
   }
 
-  public void draw(Graphics g, Rectangle area, ImageObserver view) {
-    float scale = getScale(area);
-
-    int y = area.y;
-
-    SlideItem slideItem = this.title;
-    Style style = Style.getStyle(slideItem.getLevel());
-    slideItem.draw(area.x, y, scale, g, style, view);
-
-    y += slideItem.getBoundingBox(g, view, scale, style).height;
-
-    for (int number = 0; number < getSize(); number++) {
-      slideItem = (SlideItem) getSlideItems().elementAt(number);
-
-      style = Style.getStyle(slideItem.getLevel());
-      slideItem.draw(area.x, y, scale, g, style, view);
-
-      y += slideItem.getBoundingBox(g, view, scale, style).height;
-    }
-  }
-
-  private float getScale(Rectangle area) {
-    return Math.min(((float) area.width) / ((float) WIDTH),
-        ((float) area.height) / ((float) HEIGHT));
-  }
+//  public void draw(Graphics g, Rectangle area, ImageObserver view) {
+//    float scale = getScale(area);
+//
+//    int y = area.y;
+//
+//    SlideItem slideItem = this.title;
+//    Style style = Style.getStyle(slideItem.getLevel());
+//    slideItem.draw(area.x, y, scale, g, style, view);
+//
+//    y += slideItem.getBoundingBox(g, view, scale, style).height;
+//
+//    for (int number = 0; number < getSize(); number++) {
+//      slideItem = (SlideItem) getSlideItems().elementAt(number);
+//
+//      style = Style.getStyle(slideItem.getLevel());
+//      slideItem.draw(area.x, y, scale, g, style, view);
+//
+//      y += slideItem.getBoundingBox(g, view, scale, style).height;
+//    }
+//  }
+//
+//  private float getScale(Rectangle area) {
+//    return Math.min(((float) area.width) / ((float) WIDTH),
+//        ((float) area.height) / ((float) HEIGHT));
+//  }
 }

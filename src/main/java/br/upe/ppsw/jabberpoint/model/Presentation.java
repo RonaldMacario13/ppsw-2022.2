@@ -1,6 +1,8 @@
-package br.upe.ppsw.jabberpoint.apresentacao;
+package br.upe.ppsw.jabberpoint.model;
 
 import java.util.ArrayList;
+
+import br.upe.ppsw.jabberpoint.view.SlideViewerComponent;
 
 public class Presentation {
 
@@ -11,7 +13,7 @@ public class Presentation {
 
   public Presentation() {
     slideViewComponent = null;
-    clear();
+
   }
 
   public Presentation(SlideViewerComponent slideViewerComponent) {
@@ -19,16 +21,16 @@ public class Presentation {
     clear();
   }
 
-  public int getSize() {
-    return showList.size();
-  }
-
   public String getTitle() {
     return title;
   }
-
+  
   public void setTitle(String nt) {
-    title = nt;
+	  title = nt;
+  }
+  
+  public int getSize() {
+	  return showList.size();
   }
 
   public void setShowView(SlideViewerComponent slideViewerComponent) {
@@ -58,7 +60,7 @@ public class Presentation {
     }
   }
 
-  void clear() {
+  public void clear() {
     showList = new ArrayList<Slide>();
     setSlideNumber(-1);
   }
